@@ -20,7 +20,7 @@ body {
 .header {
   background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
   width: 100%;
-  min-width: 1220px;
+  /* min-width: 1020px; */
   min-height: 450px;
   position: relative;
   margin-right: auto;
@@ -71,7 +71,7 @@ body {
 }
 
 .logo-text-item {
-  width: 700px;
+  max-width: 700px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -116,11 +116,12 @@ z-index: -1; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-min-height: 318px; /* поменять */
+height: 318px;
 width: 25%;
-background-position: cover;
+background-size: cover;
 padding: 15px;
 z-index: 0;
+/* flex-shrink: 1; */
 }
 
 .trend-description:before {
@@ -152,18 +153,14 @@ z-index: 0;
 }
 
 .trend-description {
-/* display: flex;
-flex-direction: column; */
 border: 3px solid #b59f5b;
-/* justify-content: flex-end; */
-/* align-items: flex-end; */
 margin: 0;
-padding: 35px 35px 10px 35px;
+padding: 10px 35px 10px 35px;
 }
 
 .trend-tag {
   padding: 0;
-  display: flex;
+   display: flex;
   list-style-type: none;
   text-transform: uppercase;
   align-items: center;
@@ -172,13 +169,24 @@ padding: 35px 35px 10px 35px;
   font-size: 14px;
 }
 
+
 .trand-tag-item {
   margin-right: 15px;
+}
+
+.trand-tag-item:hover {
+  text-decoration: underline;
 }
 
 .trend-header {
 color: #ffffff;
 text-transform: uppercase;
+font-size: 20px;
+margin-block-start: -10px;
+}
+
+.trend-header:hover {
+color: #b59f5b;
 }
 
 .content {
@@ -508,27 +516,55 @@ text-transform: uppercase;
   margin: 10px auto;
   }
 
+ 
+
 .product-content {
 display: flex;
+justify-content: space-between;
 width: 100%;
-gap: 30px;
+gap: 5px;
 }
 
 .product-item {
-  width: 30%;
-}
+  width: 26%;
+   display: flex;
+  flex-direction: column;
+  margin: 0 23px;
+ }
 
 .product-logo {
   width: 100%;
 }
 
+
 .product-description {
-  outline: 2px solid #d3c59d;
-  outline-offset: 10px;
-  margin-top: -30px;
+    outline: 3px solid #d3c59d;
+  outline-offset: 20px;
+  margin-top: -5px;
+  
+  flex-grow: 1;
+}
+
+.product-header {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+ .product-text {
+    font-size: 15px;
+  }
+
+  .product-text-link {
+color: #d3c59d;
+text-decoration: none;
+  }
+
+.product-text-link:hover {
+  text-decoration: underline;
 }
 
 .product-footer {
+  margin-top: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -548,10 +584,16 @@ gap: 30px;
 
 .product-price-old {
   text-decoration: line-through;
+   font-weight: bold;
+  color: #0f0d0e;
+  font-size: 14px;
 
 }
 
 .product-price-new {
+  font-weight: bold;
+  color: #0f0d0e;
+  font-size: 20px;
 /* align-items: end; 
 align-self: end; притягивает все цены к правому краю */
 }
@@ -563,6 +605,9 @@ border: 0;
 width: 135px;
 height: 42px;
 color: #ffffff;
+font-size: 14px;
+font-weight: bold;
+text-transform: uppercase;
 }
 
 .product-button:hover {
@@ -570,14 +615,13 @@ color: #ffffff;
 }
 
 .footer {
+  margin-top: 85px;
   display: flex;
   max-width: 1220px;
-  min-width: 1220px;
   height: 83px;
   background-color: #f4f7f6;
   align-items: center;
   justify-content: center;
-  margin-top: 7px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -609,11 +653,8 @@ color: #ffffff;
 
 .copyright {
   display: flex;
-  max-width: 1660px;
-  min-width: 1220px;
-  margin-top: 70px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1220px;
+  margin: 70px auto 0px;
   justify-content: center;
 }
 
@@ -623,3 +664,49 @@ color: #ffffff;
   color: #999999;
   text-decoration: none;
 }
+
+
+
+@media (max-width: 1000px) and (min-width: 641px) {
+
+.upline {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.logo {
+  width: 150px;
+}
+
+.logo-item-menu {
+  margin-left: 16px;
+}
+
+.logo-text-item {
+  max-width: 700px;
+  font-size: 35px;
+}
+
+.trends-art {
+padding: 10px;
+}
+
+.trend-description {
+padding: 5px 10px 5px 10px;
+}
+
+.trend-tag {
+flex-wrap: wrap;
+  font-size: 12px;
+}
+
+
+.trand-tag-item {
+  margin-right: 8px;
+}
+
+.trend-header {
+font-size: 16px;
+overflow-wrap: break-word;
+}
+
