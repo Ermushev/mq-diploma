@@ -423,5 +423,42 @@
     <a href="#0" class="copyright-link">Copyright @ Ivan Ermushev</a>
   </span>
 </footer>
+<input type="checkbox" id="popup" class="popup-btn">
+<div class="popup">
+  <label for="popup" class="popup-close-bcg"></label>
+  <form class="popup-form">
+    <label for="popup" class="popup-close">
+      <img src="svg\form-x.svg" alt="close">
+    </label>
+    <span class="popup-header">Ваш фидбек</span>
+    <section class="popup-activity">
+      <label for="activity" class="popup-text">Как часто вы заходите на сайт?</label>
+      <select id="activity" class="popup-activity-form">
+        <option selected>Почти каждый день</option>
+        <option>Раз в несколько дней</option>
+        <option>Раз в несколько недель</option>
+        <option>Несколько раз в год</option>
+      </select>
+      <!-- <svg class="icon-choice" url="svg/form-arrows.svg">
+
+      </svg> -->
+    </section>
+    <section class="popup-subscribe">
+      <span class="popup-text">Вы подписаны на e-mail рассылку?</span>
+      <div class="popup-radio">
+        <input type="radio" id="subscribe-yes" class="radio-hidden" name="choice" value="yes">
+        <label for="subscribe-yes" class="popup-subscribe-form">Да</label>
+        <input type="radio" id="subscribe-no" class="radio-hidden" name="choice" value="no">
+        <label for="subscribe-no" class="popup-subscribe-form">Нет</label>
+      </div>
+    </section>
+    <section class="popup-feedback">
+      <span class="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+      <textarea name="feedback" id="feedback" class="popup-feedback-form" placeholder="Может, больше рецептов?"></textarea>
+    </section>
+    <button class="popup-button" type="submit">ОТПРАВИТЬ</button>
+  </form>
+</div>
+<label for="popup" class="btn">Ваш фидбек</label>
 </body>
 </html>
