@@ -845,9 +845,8 @@ font-weight: bold;
 text-transform: uppercase;
 align-items: center;
 justify-content: center;
-justify-self: center;
-margin-top: 20px;
 cursor: pointer;
+margin: 20px auto 15px;
 }
 
 /* планшеты горизонтально */
@@ -1262,6 +1261,8 @@ font-size: 12px;
   font-size: 26px;
   padding-top: 0px;
   line-height: 1.38;
+    padding-left: 4%;
+  padding-right: 4%;
 }
 
 .trends {
