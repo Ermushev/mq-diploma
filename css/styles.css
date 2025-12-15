@@ -1,13 +1,13 @@
 @font-face {
   font-family: OpenSans;
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  src: url(../fonts/OpenSans-Bold.woff);
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
   font-family: OpenSans;
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  src: url(../fonts/OpenSans-Regular.woff);
   font-style: normal;
   font-weight: normal;
 }
@@ -18,7 +18,8 @@ body {
 }
 
 .header {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-image: url(../images/banner-bg.jpg);
+  background-size: cover;
   width: 100%;
   /* min-width: 1020px; */
   min-height: 450px;
@@ -387,7 +388,7 @@ color: #b59f5b;
 .form-search-submit {
   width: 48px;
   border: 0px;
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  background-image: url("../svg/search.svg");
   background-color: #b59f5b;
   background-repeat: no-repeat;
   background-position: center center;
@@ -543,7 +544,7 @@ gap: 5px;
 .product-description {
     outline: 3px solid #d3c59d;
   outline-offset: 20px;
-  margin-top: -5px;
+  margin-top: -15px;
   
   flex-grow: 1;
 }
@@ -624,21 +625,21 @@ text-transform: uppercase;
 
 .footer-dribbble {
   display: block;
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
+  background-image: url("../svg/001-dribbble.svg");
   width: 22px;
   height: 22px;
 }
 
 .footer-pinteres {
   display: block;
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg");
+  background-image: url("../svg/001-pinterest.svg");
   width: 22px;
   height: 22px;
 }
 
 .footer-twitter {
   display: block;
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+  background-image: url("../svg/004-twitter.svg");
   width: 22px;
   height: 22px;
 }
@@ -852,6 +853,10 @@ cursor: pointer;
 /* планшеты горизонтально */
 @media (max-width: 1200px) and (min-width: 641px) and (orientation: landscape) {
 
+.header {
+  background-image: url(../images/banner-bg-tablet.jpg);
+}
+
 .upline {
   margin-left: 4%;
   margin-right: 4%;
@@ -984,12 +989,12 @@ margin-top: 35px;
 }
 
 .product-item {
-  width: 30%;
-  margin: 0 10px;
+  width: 27%;
+  margin: 0 20px;
  }
 
 .product-description {
-  outline-offset: 5px;
+  outline-offset: 10px;
 }
 
 .product-header {
@@ -1005,10 +1010,18 @@ width: 105px;
 font-size: 12px;
 }
 
+.product-footer {
+  padding-bottom: 10px;
+}
+
 }
 
 /* планшеты портрет */
 @media (max-width: 1200px) and (min-width: 641px) and (orientation: portrait) {
+
+.header {
+  background-image: url(../images/banner-bg-tablet.jpg);
+}
 
 .upline {
   margin-left: 4%;
@@ -1160,8 +1173,16 @@ margin-top: 35px;
   margin: 0 10px 25px;
  }
 
+/* .product-description {
+    outline: 3px solid #d3c59d;
+  outline-offset: 20px;
+  margin-top: -15px;
+  
+  flex-grow: 1;
+} */
+
 .product-description {
-  outline-offset: 5px;
+  outline-offset: 10px;
 }
 
 .product-header {
@@ -1177,6 +1198,10 @@ width: 105px;
 font-size: 12px;
 }
 
+.product-footer {
+  padding-bottom: 10px;
+}
+
 .footer {
   margin-top: 50px;
 }
@@ -1187,6 +1212,7 @@ font-size: 12px;
 @media (max-width: 640px) and (orientation: portrait) {
 
 .header {
+  background-image: url(../images/banner-mobile.jpg);
   height: 640px;
 }
 
@@ -1405,11 +1431,11 @@ gap: 50px;
 }
 }
 
-
 /* мобилки горизонтально */
 @media (max-width: 640px) and (orientation: landscape) {
 
 .header {
+  background-image: url(../images/banner-mobile.jpg);
   height: 640px;
 }
 
@@ -1486,22 +1512,6 @@ min-width: 46%;
 max-width: 47%;
 height: 30vw;
 }
-
-/* .trend-art1 {
-  background-image: url("../images/trend1.jpg");
-}
-
-.trend-art2 {
-  background-image: url("../images/trend2.jpg");
-}
-
-.trend-art3 {
-  background-image: url("../images/trend3.jpg");
-}
-
-.trend-art4 {
-  background-image: url("../images/trend4.jpg");
-} */
 
 .trend-description {
 padding: 10px 20px 10px 20px;
